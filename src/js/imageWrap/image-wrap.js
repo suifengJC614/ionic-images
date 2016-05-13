@@ -1,7 +1,7 @@
 /**
  * Created by mac on 16/5/11.
  */
-(function($){
+;(function($){
 
     var module = angular.module('ion-images');
     module.directive('imgWrap', ImageWrapDirective);
@@ -53,4 +53,4 @@
         }
     }
 
-})(jQuery)
+})(jQuery);

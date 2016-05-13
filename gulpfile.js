@@ -18,6 +18,7 @@ var plumber = require('gulp-plumber');
 var ngHtml2Js = require("gulp-ng-html2js")
 var minifyHtml = require('gulp-minify-html');
 var uglify = require("gulp-uglify");
+var templateCache = require('gulp-angular-templatecache');
 
 var paths = {
     src: ['./src/*','./src/**/*'],
@@ -52,6 +53,11 @@ gulp.task('build-template', function(){
             moduleName: "ion-images",
             prefix: "src/"
         }))
+        //.pipe(templateCache({
+        //    standalone: true,
+        //    module: 'ion-images',
+        //    root: 'src/'
+        //}))
         .pipe(concat("image-template.min.js"))
         .pipe(gulp.dest(paths.dist + "/js"));
 })

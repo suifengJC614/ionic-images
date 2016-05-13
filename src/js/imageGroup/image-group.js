@@ -1,7 +1,7 @@
 /**
  * Created by mac on 16/5/11.
  */
-(function($){
+;(function($){
 
     var module = angular.module('ion-images');
     module.directive('imgGroup', ImageGroupDirective);
@@ -32,7 +32,7 @@
         function ImageGroupPostLink(scope, element, attrs, ctrl, transclude){
             imageModal.createModal({images:scope.images}).then(function(modal){
                 scope.modal = modal;
-                scope.$watch(scope.images, function(){
+                scope.$watchCollection('images', function(){
                     modal.setImage(scope.images);
                 })
             })
@@ -74,4 +74,4 @@
     }
 
 
-})(jQuery)
+})(jQuery);

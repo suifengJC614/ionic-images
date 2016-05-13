@@ -2,7 +2,7 @@
  * Created by mac on 16/5/11.
  * if (s.params.touchMoveStopPropagation && !s.params.nested) {
  */
-(function($){
+;(function($){
 
     var module = angular.module('ion-images');
     module.provider('imageModal', ImageModalProvider);

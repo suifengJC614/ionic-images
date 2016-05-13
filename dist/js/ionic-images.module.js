@@ -1,7 +1,7 @@
 /**
  * Created by mac on 16/5/11.
  */
-(function(){
+;(function(){
 
    var module = angular.module('ion-images',['ionic']);
 
@@ -18,4 +18,4 @@
       this.splice(index,0,obj);
    }
 
-})()
+})();
