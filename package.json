@@ -1,6 +1,6 @@
 {
   "name": "ionic-images",
-  "version": "1.0.0-alpha",
+  "version": "0.1.2-alpha",
   "description": "ionic-images: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",

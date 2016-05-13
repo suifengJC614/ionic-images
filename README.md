@@ -1,4 +1,4 @@
-Ionic Images  `version 0.1.1-alpha`
+Ionic Images  `version 0.1.2-alpha`
 ========================
 
 Ionic Image 是专门为Ionic项目写的图片插件<br/>
