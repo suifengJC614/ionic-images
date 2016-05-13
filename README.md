@@ -1,4 +1,4 @@
-Ionic Images  `version 0.1.2-alpha`
+Ionic Images 
 ========================
 
 Ionic Image 是专门为Ionic项目写的图片插件<br/>
@@ -65,6 +65,7 @@ module.controller('ImageGroupCtrl', ['$scope', function($scope){
 其他
 ---------------------------
 
-如果发现有bug，可以邮件jichao614@foxmail.com，将会即使进行修正
+如果发现有bug，可以邮件jichao614@foxmail.com，将会即使进行修正<br/>
+后期会陆续将选择图片、上传图片功能加入
 
 
