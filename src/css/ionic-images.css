@@ -1,0 +1,62 @@
+.col-img-wrap {
+  width: 100%;
+  position: relative; }
+  .col-img-wrap em {
+    display: block;
+    padding-top: 100%; }
+  .col-img-wrap div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover; }
+    .col-img-wrap div.def-add {
+      background-image: url("../img/add-img.svg"); }
+
+ul.img-group {
+  flex-wrap: wrap;
+  padding: 0; }
+  ul.img-group li {
+    padding: 3px; }
+
+.image-model {
+  height: 100%; }
+  .image-model .swiper-pagination-bullet {
+    background-color: #eeeeee; }
+    .image-model .swiper-pagination-bullet-active {
+      background-color: #ffffff; }
+  .image-model .scroll-view {
+    height: 100%;
+    width: 100%; }
+    .image-model .scroll-view .scroll {
+      height: 100%;
+      width: 100%; }
+    .image-model .scroll-view .img-wrap {
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%; }
+      .image-model .scroll-view .img-wrap em {
+        width: 0;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        margin: 0; }
+      .image-model .scroll-view .img-wrap img {
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%; }
+
+.slide-fade {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+  .slide-fade.ng-enter, .slide-fade > .ng-enter {
+    opacity: 0; }
+  .slide-fade.ng-enter-active, .slide-fade > .ng-enter-active {
+    opacity: 1.0; }
+  .slide-fade.ng-leave, .slide-fade > .ng-leave {
+    opacity: 0; }

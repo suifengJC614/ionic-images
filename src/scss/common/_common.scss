@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@mixin transition($time: 0.2){
+  -webkit-transition: all #{$time}s linear;
+  transition: all #{$time}s linear;
+}
+
+@mixin full-warp($borderline: 0px){
+  position: absolute;
+  top: $borderline;
+  left: $borderline;
+  right: $borderline;
+  bottom: $borderline;
+}
+
+@mixin background-cover{
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin multi-line-ellipsis($line: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

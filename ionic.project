@@ -1,0 +1,13 @@
+{
+    "name": "ionic-images",
+    "app_id": "",
+    "gulpStartupTasks": [
+         "watch"
+    ],
+    "watchPatterns": [
+        "src/**/*",
+        "test/**/*",
+        "!src/lib/**/*"
+    ],
+    "documentRoot": "./"
+}

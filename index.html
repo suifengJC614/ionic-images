@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <!-- inject:libs:css -->
+  <link rel="stylesheet" href="src/lib/ionic/css/ionic.css">
+  <!-- endinject -->
+
+  <!-- inject:libs:js -->
+  <script src="src/lib/jquery/dist/jquery.js"></script>
+  <script src="src/lib/ionic/js/ionic.bundle.js"></script>
+  <!-- endinject -->
+
+  <!-- inject:app:css -->
+  <link rel="stylesheet" href="src/css/image-looker.css">
+  <!-- endinject -->
+
+  <!-- inject:app:js -->
+  <script src="src/js/image-looker.module.js"></script>
+  <script src="src/js/imageGroup/image-group.js"></script>
+  <script src="src/js/imageModal/image-modal.js"></script>
+  <script src="src/js/imageWrap/image-wrap.js"></script>
+  <!-- endinject -->
+
+  <!-- inject:test:css -->
+  <!-- endinject -->
+
+  <!-- inject:test:js -->
+  <script src="test/image-wrap.test.js"></script>
+  <!-- endinject -->
+
+</head>
+<body ng-controller="TestImageWrapCtrl">
+
+<ion-content>
+  <img-group>
+    <img-wrap bg-src="src" ng-repeat="src in images track by $index"></img-wrap>
+  </img-group>
+</ion-content>
+
+</body>
+</html>
