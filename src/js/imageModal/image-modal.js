@@ -20,7 +20,7 @@
             function createModal(opts){
                 opts = $.extend({}, def_opts, opts);
                 var defer = $q.defer();
-                var scope = $rootScope.$new(true);
+                var scope = opts.scope? opts.scope.$new() : $rootScope.$new(true);
                 scope.data = {};
                 scope.opts={touchMoveStopPropagation:false};
                 if(imgUtils.isType(opts.images, 'Array')){
@@ -130,11 +130,9 @@
             this.reset();
         },
         scale: function(index){
-            console.log(this.slider.isEnd);
             var images = this.scope.images[index];
             images.zoom = images.zoom == 1? 2 : 1;
             var ionicScroll = this.$ionicScrollDelegate.$getByHandle("scroll"+index);
-            console.log(ionicScroll)
             ionicScroll.zoomTo(images.zoom, true);
             this.allowSwipe(images.zoom == 1);
         },

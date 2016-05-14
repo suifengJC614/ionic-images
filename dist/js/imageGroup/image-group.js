@@ -30,7 +30,7 @@
         }
 
         function ImageGroupPostLink(scope, element, attrs, ctrl, transclude){
-            imageModal.createModal({images:scope.images}).then(function(modal){
+            imageModal.createModal({images:scope.images, scope: scope}).then(function(modal){
                 scope.modal = modal;
                 scope.$watchCollection('images', function(){
                     modal.setImage(scope.images);
